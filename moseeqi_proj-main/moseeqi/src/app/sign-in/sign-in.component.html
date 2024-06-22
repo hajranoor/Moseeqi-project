@@ -1,0 +1,38 @@
+<div class="container-fluid" style=" padding:0%" >
+    <div class="row" style="height: 80%;" >
+        <div class="container c">
+            <div class="col-sm-6" style="margin-top: 15%; margin-right:15%; margin-left:15%; width:30% ;" >
+                <h1 class="head" >Moseeqi</h1>
+                <form  class="needs-validation" nonvalidate>
+                    <div class="form-group">
+                        <input type="email" required [(ngModel)]="EMAIL"  class="form-control" id="email" placeholder="Enter email" name="email">
+                        <div class="valid-feedback">
+                            Looks Good!
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="pwd">Password:</label> -->
+                        <br>
+                        <input type="password"  required [(ngModel)]="PASSWORD" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    </div>
+                    <!-- <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div> -->
+                    <br>
+                    <div style="margin-right: 35%; margin-left: 35%;">
+                        <button (click)="signinfunction()" type="submit" class="btn btn-default b">Log In</button>
+                    </div>
+
+                
+
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row" style="color: #F7E108; background-color: #110E1F; height: 20%;">
+        <p>Stop missing out on life and be a part of <b>Moseeqi</b> NOW </p>
+        <p><a routerLink='signUp'>Sign Up</a> to be a part of this community! </p>
+        
+    </div> 
+</div>

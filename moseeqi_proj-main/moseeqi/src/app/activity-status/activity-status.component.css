@@ -1,0 +1,10 @@
+.table{
+    color: #FEA217;
+    background-color: #110E1F;
+}
+#tbody:hover
+{
+    text-decoration: #F7E108;
+    color:#F7E108;
+    background-color:#282246;;
+}

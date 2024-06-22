@@ -1,0 +1,63 @@
+<div class="container c" style="width: 950px; height: 400px;">
+    <h1>Welcome to Moseeqi</h1>
+    <div class="row r" *ngIf = "playlistbool == 'true'" >
+        <p style="color: #282246;"><b>Albums</b></p>
+        
+        <div class = "col-sm-2 cl">
+          <div class="card" style="width: 200px; max-height: fit-content;margin-inline-start: 25px;">
+              <img src="../../assets/albums/ab67616d0000b27317db30ce3f081d6818a8ad49.jpg" class="card-img-top" alt="...">
+              <div class="card-body cb">
+                <h6 class="card-title" style="color: #FEA217;">Proof</h6>
+              </div>
+            </div>
+        </div>
+        <div class = "col-sm-2 cl">
+          <div class="card" style="width: 200px; max-height: fit-content;margin-inline-start: 100px;">
+              <img src="../../assets/albums/ab67616d00001e02bd375b430c3abeceb8b5d8da.jpg" class="card-img-top" alt="...">
+              <div class="card-body cb">
+                <h6 class="card-title" style="color: #FEA217;">You never walk alone</h6>
+              </div>
+            </div>
+        </div>
+        <div class = "col-sm-2 cl">
+            <div class="card" style="width: 200px; max-height: fit-content;margin-inline-start: 175px;">
+                <img src="../../assets/albums/ab67616d0000b273714e56679ab196354e2e443e.jpg" class="card-img-top" alt="...">
+                <div class="card-body cb">
+                  <h6 class="card-title" style="color: #FEA217;">Border Carnival</h6>
+                </div>
+              </div>
+        </div>
+        <div class = "col-sm-2 cl">
+          <div class="card" style="width: 200px; max-height: fit-content;margin-inline-start: 250px;">
+              <img src="../../assets/albums/download (3).jpg" class="card-img-top" alt="...">
+              <div class="card-body cb">
+                <h6 class="card-title" style="color: #FEA217;">Night Visions</h6>
+              </div>
+            </div>
+      </div>
+      
+    </div>
+    <div class = "row r" *ngIf = "playlistbool == 'false'">
+      <p>you dont currently have any playlists</p>
+    </div>
+    <!-- <td><img style="height: 33px; width: 33px" [src]="'http://localhost:8001/' +song.picture" alt=""></td>
+              <td><a [href]="'http://localhost:8001/'+song.song_name">Play</a></td> -->
+    <div class="row r">
+        <p style="color: #282246;"><b>Artists</b></p>
+        <div class="col-sm-2">
+          <img [src] = "'http://localhost:8001/' + artists[0].profilepicture" class="im" alt="..." style="margin-inline-start: 30px;">
+        </div>
+        <div class="col-sm-2">
+          <img [src] = "'http://localhost:8001/' + artists[1].profilepicture" class="im" alt=".." style="margin-inline-start: 40px;">
+        </div>
+        <div class="col-sm-2">
+          <img [src] = "'http://localhost:8001/' + artists[2].profilepicture" class = "im" alt="..."style="margin-inline-start:50px;">
+        </div>
+        <div class="col-sm-2">
+          <img [src] = "'http://localhost:8001/' + artists[3].profilepicture"  class = "im" alt="..."style="margin-inline-start: 60px;">
+        </div>
+        <div class="col-sm-2">
+          <img [src] = "'http://localhost:8001/' + artists[4].profilepicture"  class = "im" alt="..."style="margin-inline-start: 70px;">
+        </div>
+    </div>
+</div>

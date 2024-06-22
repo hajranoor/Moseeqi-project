@@ -1,0 +1,74 @@
+
+<div class="container-fluid c " style="height:100%; width: 100%;">
+    <div class="row r" style="height: 100% ; margin-top:0px;margin-bottom:0px; padding-bottom: 0%;">
+        <!-- side panel having option -->
+        <div class="col-sm-2 sd">
+            <div class="row">
+                <img src="../../assets/logo moseeqi.jpeg" class="img-fluid" alt="Responsive image">
+            </div>
+
+            <div id="myDIV">
+                <button class="btn active" routerLink='/admin'>Home</button>
+                <button class="btn" routerLink='songs'>All Songs</button>
+                <button class="btn" routerLink='delete-artist'>All Artists</button>
+                <button class="btn" routerLink='delete-listener'>All Listeners</button>
+
+                <button class="btn" routerLink='activity'>User Activity</button>
+                <button class="btn" routerLink='/' style="float: bottom; margin-top: 100%;">Log Out</button>
+            </div>
+        </div>
+        <!-- middle region -->
+        <div class="col-sm-8 md">
+            <router-outlet></router-outlet>
+            <!-- <app-admin-all-songs></app-admin-all-songs> -->
+        </div>
+
+
+
+        <!-- side panel having recommended songs -->
+        <div class ="col-sm-2 sd">
+            
+        </div>
+    </div>
+    <!-- bottom bar for currently playing song -->
+    <div class="row bt fixed">
+        <!-- <div class="media-footer">
+            <mat-toolbar color="primary">
+                <mat-toolbar-row>
+                    {{ state?.readableCurrentTime }}
+                    <mat-slider class="time-slider" min="0" [max]="state?.duration" step="1" [value]="state?.currentTime" (input)="onSliderChangeEnd($event)" [disabled]="state?.error || currentFile.index === undefined"></mat-slider>
+                    {{ state?.readableDuration }}
+                </mat-toolbar-row>
+                <mat-toolbar-row class="media-action-bar">
+                    <button mat-button [disabled]="isFirstPlaying()" (click)="previous()">
+                        <mat-icon mat-list-icon>skip_previous</mat-icon>
+                    </button>
+                    <button mat-button (click)="play()" [disabled]="state?.error" *ngIf="!state?.playing">
+                        <mat-icon mat-list-icon>play_circle_filled</mat-icon>
+                    </button>
+                    <button mat-button (click)="pause()" *ngIf="state?.playing">
+                        <mat-icon mat-list-icon>pause</mat-icon>
+                    </button>
+                    <button  mat-button [disabled]="isLastPlaying()" (click)="next()">
+                        <mat-icon mat-list-icon>skip_next</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+            </mat-toolbar> 
+        </div> -->
+        <!-- <div class = "row" ></div> -->
+    </div>
+</div>
+<!-- <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("buttons");
+    var btns = header.getElementsByClassName("b");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace("active","b");
+        this.className += "active";
+        });
+    }
+    </script> -->
+<!-- <router-outlet></router-outlet> -->
+

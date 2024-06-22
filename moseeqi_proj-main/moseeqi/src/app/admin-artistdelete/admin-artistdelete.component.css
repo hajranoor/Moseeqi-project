@@ -1,0 +1,49 @@
+#grad{
+    background-color:  #110E1F;
+    margin-left: 20%;
+    width: 500px;
+    color: #F7E108;
+    border-color:  #F7E108;
+    box-shadow: #F7E108;
+}
+.btn{
+    background-color: #110E1F;
+    border-color: #F7E108;
+    color: #F7E108;
+    width: fit-content;
+}
+.carddd{
+    background-color: #1B172E;
+    color: #FEA217;
+}
+.c{
+    height: 700px;
+}
+.r{
+    max-height: 550px;
+    height: 550px;
+}
+#scrollable{
+    height: 550px;
+    overflow: auto;
+}
+#scrollable::-webkit-scrollbar{
+    width: 10px;
+    background-color: #110E1F ;
+}
+#scrollable::-webkit-scrollbar-track{
+    background-color: #110E1F ;
+    border-radius: 5px;
+
+}
+#scrollable::-webkit-scrollbar-thumb{
+    background: linear-gradient(#1B172E, #FEA217);
+    z-index: 4;
+    border-radius: 5px;
+    
+}
+#profilebutton{
+    background-color: #1B172E;
+    color: #F7E108;
+    border-color: #F7E108;
+}

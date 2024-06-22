@@ -1,0 +1,21 @@
+.c{
+    padding: 10px;
+}
+.im{
+    border-radius: 50%;
+    max-height: 125px;
+    max-width: 125px;
+}
+h2 {text-align: center;
+    color: #FEA217;}
+div
+ {color: #FEA217;}
+
+.btn-primary{
+    margin-top: 30px;
+    size: 50px;
+
+}
+label{
+    margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+<h2 >Edit your Profile</h2>
+<div class="container c"> 
+    <div class="column">
+            <div class="form-group">
+                <div class="row-sm-4">
+                <label for="name">Bio:</label>
+                <input type="name" value = {{getbio}} [(ngModel)]="BIO"  class="form-control" id="name"  name="name">
+            </div>
+        </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="name">Profile Picture</label>
+                        <button type="button"  class="btn btn-success"><input type="file" (change)="onImageSelected($event)">
+                        </button>
+                      </div>
+                     
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
+                    <br>
+              <div class="row-sm-4">
+                <p align="right">
+                    <button type="button" (click) = "editprofilefunction()" class="btn btn-primary">change</button>
+                  </p>
+            </div>
+</div></div>
+</div>
+    

@@ -1,0 +1,21 @@
+<h2>Song List</h2>
+<div class="container c">
+  <div class="column">
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+              <th scope="col">Description</th>
+              <th scope="col">Cover</th>
+              <th scope="col">Song</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let song of songs">
+              <td>{{song.description}}</td>
+              <td><img style="height: 33px; width: 33px" [src]="'http://localhost:8001/' +song.picture" alt=""></td>
+              <td><a [href]="'http://localhost:8001/'+song.song_name">Play</a></td>
+            </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

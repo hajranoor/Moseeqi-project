@@ -1,0 +1,33 @@
+.c{
+    padding: 10px;
+}
+.r{
+    padding: 10px;
+    max-width: 100%;
+}
+.cl{
+    padding-left: 10px;
+    
+}
+.im{
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.cb{
+    background-color: #282246;
+    border: 0%;
+    margin: 0%;
+
+}
+.card{
+    border-color: #282246;
+    /* border-width: 0ch; */
+    background: #110E1F;
+}
+h1{
+    background: linear-gradient(to left,  #F7E108, #FEA217,#ff6b08,#352b68);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}

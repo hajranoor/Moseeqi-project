@@ -1,0 +1,29 @@
+<h2 style="color: #F7E108;">All Songs</h2>
+<div class="container c">
+  <div class="column">
+
+    <div class="row r" id="scrollable">
+          <div *ngFor="let artist of songs; let i = index">
+            <div class="card carddd">
+              <div class="row no-gutters">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-11" >
+                  <div class="card-body" style="padding: 0px;">
+                    <p class="card-title title"><b>{{artist.nameofthesong}}</b></p>
+                    <p><img style="height: 33px; width: 33px" [src]="'http://localhost:8001/' +artist.picture" alt=""></p>
+                    <p><a [href]="'http://localhost:8001/'+artist.song_name">Play</a></p>
+                    <button type = "button" id = "profilebutton" value = {{artist.songID}} (click) = "DeleteSong(artist)"><label for = "chk">Delete</label></button>
+                    <!-- <p class="card-text txt">{{song.genre}}</p> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          </div>
+          
+        </div>
+
+
+</div>
+        

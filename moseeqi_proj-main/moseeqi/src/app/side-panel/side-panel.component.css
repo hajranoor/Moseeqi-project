@@ -1,0 +1,40 @@
+.container-fluid{
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+.sidenav{
+    background-color: #1B172E;
+    /* position:fixed;
+    float:left; */
+}
+.n{
+    padding-block-start: 7%;
+}
+.m{
+    scroll-padding-block-start: 2%;
+}
+.um{
+    background-color: #110E1F;
+        /* position: fixed;
+        float: right; */
+}
+.box-form div{
+    height: auto;
+}
+/* .side-nav .box-form{
+
+    color: #FFF5D1;
+    
+    background-color: aqua;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/logo.jpg);
+    width: 60%;
+    overflow: hidden;
+    background-position: center;
+    position: relative;
+
+} */

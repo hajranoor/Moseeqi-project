@@ -1,0 +1,41 @@
+.top{
+    max-height: 70px;
+}
+.bottom{
+    max-height: 450px;
+    
+}
+.heading{
+    color:  #F7E108;
+}
+.col-6{
+    
+}
+.icon{
+    margin-left: 80%;
+    color: #F7E108;
+}
+#playlist{
+    height: 450px;
+    overflow: auto;
+}
+#playlist::-webkit-scrollbar{
+    width: 10px;
+    background-color: #110E1F ;
+}
+#playlist::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: #110E1F ;
+    border-radius: 5px;
+
+}
+#playlist::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: linear-gradient(#1B172E, #FEA217, #F7E108);
+    border-radius: 5px;
+    
+}
+.accordian-item{
+    background-color: #1B172E;
+}
+

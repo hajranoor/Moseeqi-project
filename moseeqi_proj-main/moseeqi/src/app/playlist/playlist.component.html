@@ -1,0 +1,45 @@
+
+<div class="container">
+    <div class="row top">
+        <div class="col-6">
+            <h1 class="heading">Playlists</h1>
+        </div>
+        <div class="col-6" >
+            <button class="btn icon"  (click)="clicked()"><i class="fa fa-plus" ></i></button>
+        </div>
+    </div>
+    <div class="row bottom" id="playlists">
+        <div class="accordion" id="accordionExample"><!--ngfor loop started for dynamic data -->
+            <div class="accordion-item" *ngFor="let p of playlists; let i = index" style="background-color: #110E1F; border-color: #110E1F;">
+                <h2 class="accordion-header" [id]="'heading'+i">
+                
+                    <button class="accordion-button" [ngClass]="{ 'collapsed': i != 0 }" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+i" aria-expanded="true" [attr.aria-controls]="'collapse'+i" style="background-color: #1B172E; color: #FEA217;">
+                    {{p.playlistname}}
+                    </button>
+                </h2>
+                <div [id]="'collapse'+i" class="accordion-collapse collapse" [ngClass]="{ 'show': i == 0 }" [attr.aria-labelledby]="'heading'+i" data-bs-parent="#accordionExample" >
+                    <div class="accordion-body" *ngFor="let song of p.playlistsongs;">
+                        <div class="card carddd" style="background-color: #1B172E; color:  #FEA217;">
+                            <div class="row no-gutters">
+                                <div class="col-sm-1">
+                                <img class="card-img" [src] = "'http://localhost:8001/' + song.picture" alt="Cover photo" style="height:57px; width: 57px;">
+                            </div>
+                            <div class = "col-sm-1">
+                                <a [href] = "'http://localhost:8001/' + song.song_name">Play</a>
+                            </div>
+                            <div class="col-sm-11" >
+                                <div class="card-body" style="padding: 0px;">
+                                    <p class="card-title title"><b>{{song.nameofthesong}}</b></p>
+                                    <p class="card-text txt">{{song.genre}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <td><img style="height: 33px; width: 33px" [src]="'http://localhost:8001/' +song.picture" alt=""></td>
+            <td><a [href]="'http://localhost:8001/'+song.song_name">Play</a></td> -->
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>

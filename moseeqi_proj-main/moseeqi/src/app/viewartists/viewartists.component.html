@@ -1,0 +1,29 @@
+<h2 style="color: #F7E108;">All Artists</h2>
+<div class="container c">
+  <div class="column">
+
+    <div class="row r" id="scrollable">
+          <div *ngFor="let artist of artistarray; let i = index">
+            <div class="card carddd">
+              <div class="row no-gutters">
+                <div class="col-sm-1">
+                  <img class="card-img" [src] = "'http://localhost:8001/' + artist.profilepicture" alt="Cover photo" style="height:55px; width: 55px;">
+                </div>
+                <div class="col-sm-11" >
+                  <div class="card-body" style="padding: 0px;">
+                    <p class="card-title title"><b>{{artist.username}}</b></p>
+                    
+                    <button type = "button" id = "profilebutton" value = {{artist.myID}} (click) = "gotoprofile(artist)"><label for = "chk">visit profile</label></button>
+                    <!-- <p class="card-text txt">{{song.genre}}</p> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          </div>
+          
+        </div>
+
+
+</div>
+        

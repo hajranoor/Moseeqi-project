@@ -1,0 +1,112 @@
+
+ 
+<div class="container c">
+    <div class="row">
+        <!-- all this should come from the database rather than being hard coded -->
+        <!-- contains profile pic, followers -->
+        <!-- [src]="'http://localhost:8001/' +song.picture" -->
+
+
+        <div class="col-sm-4" *ngFor = "let info of informationarray">
+
+            <div class="row">
+              <!-- for profile pic, name and bio -->
+            <!-- <img src="../../assets/artists/olivia.png"  class = "im" alt="..."> -->
+            <img [src] = "'http://localhost:8001/' + info.profilepicture" class = "im" alt='Profile Picture'>
+            <br>
+            <!-- username from data base -->
+            <div class="row" style="margin-inline-start: 0px;">
+                <p style = "align-self: center;"><b>{{nameToDisplay}}</b></p>
+                <p>{{info.bio}}</p>
+            </div>
+            
+            </div>
+            
+
+
+        </div>
+        <div class="col-sm-6" style = "margin-top: 50px;">
+            
+            
+            <!-- followers, following.. -->
+            <div class = "row">
+                <div class="col-sm-3">
+                    <p>{{followerscount}}</p>
+                    <p><b>Followers</b></p>
+                </div>
+                
+                <div class="col-sm-3">
+                    <p>{{followingcount}}</p>
+                    <p><b>Following</b></p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-sm-2">
+          <button class="btn" style="width: fit-content; height: fit-content; align-items: flex-end;" (click)="clicked()"><i class="fa fa-bars" style="color:#FEA217 ;"></i></button>
+        </div>
+        
+    <!-- End of row -->
+    </div>
+
+
+    <!-- Starting here are the albums and songs -->
+    <div class = "row">
+
+        <!-- Has albums -->
+        <div class="container" style="max-height: 150px;">
+          <div class="row followers" *ngIf = "category == 'artist'" >
+            <p><b>Songs</b></p>
+            <div id ="myid">
+
+              
+
+
+<!-- mahnoor code start -->
+              <!-- card starts here -->
+              <div class="card carddd" *ngFor = "let song of songsarray" style="margin-bottom: 3px;">
+                <div class="row no-gutters" style="max-height: 55px;" >
+                  <div class="col-sm-1" >
+                    <img class="card-img" [src] = "'http://localhost:8001/'+ song['picture']" alt="Cover photo" style="height:50px; width: 50px;">
+                  </div>
+                  <div class="col-sm-11" style="max-height: 50px;" >
+                    <div class="card-body" style="padding: 0px;">
+                      <p class="card-title title"><b>{{song.description}}</b></p>
+                      <p class="card-text txt">{{song.genre}}</p>
+                    </div>
+                </div>
+                <!-- <div class="row" style="max-height:1px ;"></div> -->
+              </div>
+              <!-- card ends here -->
+              
+<!-- mahnoor code end-->
+              <br>
+            
+            </div>
+          </div>
+        </div>
+        <div class="row followers" style="max-height: 250px;">
+          <p><b>Playlists</b></p>
+            <div id="#song">
+              <!-- card starts here -->
+              <div class="card carddd" *ngFor = "let playlist of artistplaylist" >
+                <div class="row no-gutters">
+                  <!-- <div class="col-sm-1">
+                    <img class="card-img" src = "./../../assets/Glass_Animals_-_Heat_Waves.png" alt="Cover photo" style="height:50px; width: 50px;">
+                  </div> -->
+                  <div class="col-sm-11" >
+                    <div class="card-body" style="padding: 0px;">
+                      <p class="card-title title"><b>{{playlist.playlistname}}</b></p>
+                      <!-- <p class="card-text txt">Single</p> -->
+                    </div>
+                  </div>
+              </div>
+              <!-- card ends here -->
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

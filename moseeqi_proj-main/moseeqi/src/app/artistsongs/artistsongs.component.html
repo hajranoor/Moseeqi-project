@@ -1,0 +1,35 @@
+<div class="container c" id="scrollable">
+  
+  <div class="card carddd" *ngFor = "let song of songs" style="margin-bottom: 3px;">
+      <div class="row no-gutters" style="max-height: 55px;" >
+        
+        <div class="col-sm-1" >
+          <img class="card-img" [src] = "'http://localhost:8001/'+ song['picture']" alt="Cover photo" style="height:50px; width: 50px;">
+        </div>
+
+        
+
+
+        <div class="col-sm-11" style="max-height: 50px;" >
+
+          <div class="card-body" style="padding: 0px;">
+            <p class="card-title title"><b>{{song.nameofthesong}}</b></p>
+            <p class="card-text txt">{{song.genre}}</p>
+          </div>
+
+        </div>
+
+        <div class = "col-sm-2">
+          <div class="row">
+            <button  type = "button" (click) = "playbuttonclick(song)" style="float: right;">Play</button>
+            <button type = "button" (click)  ="likefunction(song)" class = "btn btn-default b" style="float: right;"><i class="fa fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+
+</div>
+
+<!-- <p>it work</p> -->

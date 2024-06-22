@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="container c">
+        <h1 class="head" >Moseeqi</h1>
+        <form action="/action_page.php">
+        <div class="form-group">
+            <label for="text">Cardholder name :</label>
+            <input type="text" required [(ngModel)]="NAME" class="form-control" id="cardholdername" placeholder="Enter cardholder name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="text">Credit card number :</label>
+            <input type="text" required [(ngModel)]="CARDNUMBER" class="form-control" id="cardnumber" placeholder="Enter credit card number" name="cardnumber">
+        </div>
+        <div class="form-group">
+            <label for="text">Pin :</label>
+            <input type="text" required [(ngModel)]="CARDPIN" class="form-control" id="cardpin" placeholder="Enter Pin " name="pin">
+        </div>
+        <div class="form-group">
+            <label for="address">Billing address:</label>
+            <br>
+            <input type="text" required [(ngModel)]="ADDRESS" class="form-control" id="address" placeholder="Enter Billing address " name="address">
+        </div>
+        <br>
+        <div class="form-group">
+           
+            <br>
+           
+        </div>
+        <div class="form-group">
+            <br>
+        </div>
+        <br>
+        <!-- <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+        </div> -->
+        <br>
+        <button type="submit" (click)="subscriptionFunction()" class="btn btn-warning">Subscribe</button>
+        <button type="submit" (click) = "skipFunction()" class="btn btn-danger">Skip</button>
+        </form>
+    </div>
+   
+  </div>
+  

@@ -1,0 +1,28 @@
+.c{
+    height: 80%;
+    
+    background-color: #110E1F;
+}
+
+.b{
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #F7E108;
+    color: #110E1F;
+}
+
+.head{
+    color : #F7E108;
+    width: 100%;
+    text-align: center;
+}
+.container-fluid{
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+.p{
+    height: fit-content;
+}

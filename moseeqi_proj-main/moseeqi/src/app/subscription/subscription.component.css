@@ -1,0 +1,18 @@
+.c{
+    padding-block: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.b{
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color:#110E1F;
+    color:#F7E108;
+}
+.head{
+    color: #F7E108;
+    padding-left: 135px;
+}
+.btn-warning{
+    margin-right: 10px; 
+}

@@ -1,0 +1,42 @@
+<h2 >Account Settings</h2>
+<div class="container c" style="height:400px"> 
+    <div class="column">
+        <div class="row-sm-2">
+            <p align="right">
+                <button (click)="Logout()" type="submit" class="btn btn-primary b">Logout</button>
+              </p>
+        </div>
+        <div class="form-group" id="scrollable">
+            <div class="row-sm-2">
+                <label for="name">Change your Phone-number:</label>
+                <input type="name"  required [(ngModel)]="PHONENUMBER"  class="form-control" id="name" placeholder="Enter new phone number" name="name">
+            </div>
+            <div class="row-sm-2">
+                <p align="right">
+                    <button (click)="ChangePhonenumberfunction()" type="submit" class="btn btn-primary b">Change</button>
+                </p>
+            </div>
+            <div class="row-sm-2">
+                <label for="description">Change your Password:</label>
+                <input type="password" required [(ngModel)]="PASSWORD" class="form-control" id="pwd" placeholder="Enter new password" name="pwd">
+            </div>
+            <div class="row-sm-2">
+                <label>{{this.response}}</label>
+            </div>
+            <div class="row-sm-2">
+                <p align="right">
+                    <button (click)="ChangePasswordfunction()" type="submit" class="btn btn-primary b">Change</button>
+                </p>
+            </div>
+        </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p align="right">
+                            <button (click)="DeactivateAccount()" type="submit" id="g" class="btn btn-danger">Deactivate</button>
+                        </p>
+                    </div>
+                   
+                </div>
+
+    </div>
+</div>

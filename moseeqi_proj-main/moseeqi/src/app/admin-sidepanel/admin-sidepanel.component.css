@@ -1,0 +1,130 @@
+.sd{
+    background-color : #1B172E
+}
+.md{
+    background-color : #110E1F
+}
+.bt{
+    background-color : #282246;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-height: 62px;
+}
+.fixed{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+
+
+}
+.c{
+    padding :0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    counter-reset: none;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.r{
+  height: 90%;
+}
+.vertical-menu {
+    background-color:#1B172E ;
+    max-width: 100%; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    background-color: #1B172E; /* Grey background color */
+    color: #FEA217; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    text-align: center;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #282246; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #1B172E; /* Add a green color to the "active/current" link */
+    color: #F7E108;
+    font-weight: 700;
+    text-align: center;
+  }
+  .bt{
+    bottom: fixed;
+    height: 10%;
+    background-color: #282246;
+  }
+  body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.rw{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  position: fix-bottom;
+}
+/* .media-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+  .time-slider {
+    width: 100% !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .media-action-bar {
+    width: 100%;
+    padding: 2.5rem;
+    justify-content: center;
+  }
+  .mat-icon {
+      height: 48px !important;
+      width: 48px !important;
+      font-size: 48px !important;
+    } */
+/* Style the buttons */
+.btn {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #1B172E; /* Grey background color */
+  color: #FEA217; /* Black text color */
+  display: block; /* Make the links appear below each other */
+   /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  text-align: center;
+  width: 100%;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active {
+  background-color: #282246;
+  color: #F7E108;
+}
+.btn:hover{
+  background-color: #282246;
+  color: #F7E108;
+}
+.sml-btn{
+  color:#F7E108;
+  font-size: small;
+  background-color: #282246;
+  width: 100%;
+  border: none;
+  
+}
+.li::marker{
+  marker: none;
+}

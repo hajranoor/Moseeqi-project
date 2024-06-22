@@ -1,0 +1,71 @@
+<div class="container-fluid c " style="height:100%; width: 100%;">
+    <div class="row r" style="height: 100% ; margin-top:0px;margin-bottom:0px; padding-bottom: 0%;">
+        <!-- side panel having option -->
+        <div class="col-sm-2 sd">
+            <div class="row">
+                <img src="../../assets/logo moseeqi.jpeg" class="img-fluid" alt="Responsive image">
+            </div>
+
+            <div id="myDIV">
+                <button class="btn active" routerLink='/listeners'>Home</button>
+                <button class = "btn" routerLink='profile'>Profile</button>
+                <button class="btn" routerLink='playlists'>Playlists</button>
+                <button class="btn" routerLink="Account">Account</button>
+                <button class="btn" routerLink='songs-list'>All songs</button>
+                <button class="btn" routerLink='Artists'>View All Artists</button>
+            </div>
+        </div>
+        <!-- middle region -->
+        <div class="col-sm-8 md">
+            <router-outlet></router-outlet>    
+        </div>
+
+
+
+        <!-- side panel having recommended songs -->
+        <div class ="col-sm-2 sd" >
+            <!-- <div class="row"><h3 style="color: #F7E108 ;">Recomendations</h3></div>
+            <div class="card carddd" *ngFor = "let song of songsarray" style="background-color: #282246; margin-bottom: 5px; ">
+                <div class="row no-gutters" style="max-height: 50px; " >
+                    <div class="col-sm-5" style="width: 20%;" >
+                        <img class="card-img" src = {{song.img}} alt="Cover photo" style="height:50px; width: 50px;">
+                    </div>
+                    <div class="col-sm-6" style="max-height: 50px; margin-left: 10px;margin-top: 10px;" >
+                        <div class="card-body" style="padding: 0px;">
+                            <p class="card-title title"><b>{{song.name}}</b></p>
+                    
+                        </div>
+                    
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    <!-- bottom bar for currently playing song -->
+    <div class="row bt fixed" >
+        <!-- <div class="media-footer">
+            <mat-toolbar color="primary">
+                <mat-toolbar-row>
+                    {{ state?.readableCurrentTime }}
+                    <mat-slider class="time-slider" min="0" [max]="state?.duration" step="1" [value]="state?.currentTime" (input)="onSliderChangeEnd($event)" [disabled]="state?.error || currentFile.index === undefined"></mat-slider>
+                    {{ state?.readableDuration }}
+                </mat-toolbar-row>
+                <mat-toolbar-row class="media-action-bar">
+                    <button mat-button [disabled]="isFirstPlaying()" (click)="previous()">
+                        <mat-icon mat-list-icon>skip_previous</mat-icon>
+                    </button>
+                    <button mat-button (click)="play()" [disabled]="state?.error" *ngIf="!state?.playing">
+                        <mat-icon mat-list-icon>play_circle_filled</mat-icon>
+                    </button>
+                    <button mat-button (click)="pause()" *ngIf="state?.playing">
+                        <mat-icon mat-list-icon>pause</mat-icon>
+                    </button>
+                    <button  mat-button [disabled]="isLastPlaying()" (click)="next()">
+                        <mat-icon mat-list-icon>skip_next</mat-icon>
+                    </button>
+                </mat-toolbar-row>
+            </mat-toolbar> 
+        </div> -->
+        <!-- <div class = "row" ></div> -->
+    </div>
+</div>
+

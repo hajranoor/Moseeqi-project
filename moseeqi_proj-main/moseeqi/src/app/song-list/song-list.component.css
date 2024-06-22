@@ -1,0 +1,22 @@
+h2 {text-align: center;
+    color: #FEA217;}
+div
+ {color: #FEA217;}
+
+ .btn-group dropright
+{ 
+    margin-top: 10px;
+}
+.btn-warning{
+    margin-top: 10px; 
+}
+
+.btn-primary{
+    margin-top: 20px;
+    margin-left: 300px;
+    text-align: center;
+
+}
+.btn-success{
+    margin-top: 10px; 
+}

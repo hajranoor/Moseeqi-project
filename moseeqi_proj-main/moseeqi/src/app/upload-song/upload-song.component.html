@@ -1,0 +1,97 @@
+<h2 >Upload a Song</h2>
+<div class="container c"> 
+    <div class="column">
+            <div class="form-group">
+                <div class="row-sm-4">
+                <label for="name">Name :</label>
+                <input type="name" [(ngModel)] = "NAME"  class="form-control" id="name" placeholder="Enter song name" name="name">
+            </div>
+            <div class="row-sm-4">
+                <label for="description">Description :</label>
+                <input type="description"  required [(ngModel)]="DESCRIPTION" class="form-control" id="description" placeholder="Enter song description" name="description">
+            </div>
+            <div class="row-sm-4">
+                <label for="description">Choose a Genre :</label>
+            </div>
+        </div>
+
+        <div class = "row-sm-4">
+          <p>select genre</p>
+          <select #genres (change) = "onSelectedGenre(genres.value)">
+            <option default>pop</option>
+            <option>desi</option>
+            <option>romance</option>
+            <option>indie</option>
+            <option>jazz</option>
+            <option>country</option>
+            <option>hip-hop</option>
+            <option>rock</option>
+            <option>soul</option>
+          </select>
+        </div>
+
+
+        
+        <!-- <div class="row-sm-4">
+            <div class="btn-group dropright">
+              <button type="button"  class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                pop
+              </button>
+            <div class="dropdown-menu"  aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" >desi</a>
+              <a class="dropdown-item" >romance</a>
+              <a class="dropdown-item" >indie</a>
+              <a class="dropdown-item" >jazz</a>
+              <a class="dropdown-item" >country</a>
+              <a class="dropdown-item" >hip-pop</a>
+              <a class="dropdown-item" >rock</a>
+              <a class="dropdown-item" >soul</a>
+            </div>
+          </div>
+              </div> -->
+              <div class = "row-sm-4">
+                <p>select listeners category</p>
+                <select #listeners (change) = "onSelectedListeners(listeners.value)">
+                  <option default>all listeners</option>
+                  <option>premium listeners</option>
+                </select>
+              </div>
+
+              <div class = "row-sm-4">
+                <br>
+                
+                <p> Select Playlist</p>
+                <select #playlists (change) = "onSelectedPlaylist(playlists.value)"  >
+                  <option *ngFor = "let playlist of playlistresponse">{{playlist.playlistname}}</option>
+                </select>
+              </div>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="name">Song cover: </label>
+                        <button type="button"  class="btn btn-success"><input type="file" (change)="onImageSelected($event)">
+                        </button>
+                      </div>
+                     
+                    </div>
+                    <div class="col-sm-2">
+                      
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-group">
+                        <label for="name">Song mp3 file: </label>
+                        <button type="button" class="btn btn-success"><input type="file" (change)="onSongSelected($event)">
+                        </button>
+                      </div>
+                     
+                    </div>
+                </div>
+
+                <!-- dropdown asking existing playlist or new playlist -->
+
+              <div class="row-sm-4">
+                <button type="button" (click)="uploadsongfunction()" class="btn btn-primary">Upload</button>
+            </div>
+        </div></div>
+    

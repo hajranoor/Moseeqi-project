@@ -1,0 +1,33 @@
+<div class="outer-container">
+    <img [src] = "'http://localhost:8001/' + songres[0].picture" alt="Harry Styles' Fine Line album cover" id="background" />
+<audio [src] = "'http://localhost:8001/' + songres[0].song_name" id="track"></audio>
+    
+</div>
+
+<!-- <img src="https://i.ibb.co/7RhfRBZ/Fine-Line-Harry-Styles.jpg" alt="Harry Styles' Fine Line album cover" id="background" />
+    <audio src="https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3" id="track"></audio> -->
+<div class="player-container">
+    <img src="https://i.ibb.co/7RhfRBZ/Fine-Line-Harry-Styles.jpg" alt="Harry Styles' Fine Line album cover" id="thumbnail" />
+
+    <div class="box">
+        <div class="play-pause" >
+            <i class="far fa-play-circle fa-3x" style="color: #1B172E;" id="play"></i>
+            <i class="far fa-pause-circle fa-3x" style="color: #1B172E;" id="pause"></i>
+        </div>
+        <div class="track-info">
+            <div id="track-artist">{{songres[0].artistid}}</div>
+            <div id="track-title">{{songres[0].nameofthesong}}</div>
+        </div>
+        <div class="next-prev">
+            <i class="far fa-arrow-alt-circle-left fa-2x" id="prev-track"></i>
+            <i class="far fa-arrow-alt-circle-right fa-2x" id="next-track"></i>
+        </div>
+        <div class="progress-bar">
+            <input type="range" id="progressBar" min="0" max="" value="0" />
+        </div>
+        <div class="track-time">
+            <div id="currentTime"></div>
+            <div id="durationTime"></div>
+        </div>
+    </div>
+</div>
